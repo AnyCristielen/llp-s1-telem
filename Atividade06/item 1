@@ -1,0 +1,22 @@
+int main()
+{
+FILE *arq;
+int op = 1;
+char texto_linha[30];
+arq = fopen(&quot;arquivo.txt&quot;, &quot;w&quot;);
+while (op == 1){
+printf(&quot;\nDigite o texto da linha: &quot;);
+fflush(stdin);
+scanf(&quot;%[^\n]s&quot;, &amp;texto_linha);
+fputs(texto_linha, arq);
+
+printf(&quot;\nContinuar? (0-nao / 1-sim): &quot;);
+scanf(&quot;%d&quot;, &amp;op);
+if(op == 1){
+fputs(&quot;\n&quot;, arq);
+
+}
+}
+fclose(arq);
+return 0;
+}
