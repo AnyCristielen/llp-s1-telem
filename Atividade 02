@@ -1,0 +1,37 @@
+Atividade 02 - LLP 
+Aluno: Any Cristielen Ferreira de Oliveira 
+1º questão: 
+a)O comando While é utilizado quando não sabemos quantas vezes o bloco de  instrução vai ser repetido. A diferença para o Do/While é que utilizando ele, temos a  certeza de que os comandos vão ser executados pelo menos uma vez. 
+b) 
+#include<stdio.h> 
+int main() 
+{ 
+ int n; 
+ printf("Digite um numero:\n"); 
+ scanf("%d", &n); 
+ int i; 
+ for(i=1; i < n; i++){ 
+ if(i % 2 == 0 & i % 5 == 0){ 
+ printf("O numero %d eh multiplo de 2 e 5.\n", i); 
+ } 
+ return 0; 
+ } 
+} 
+2º Questão: 
+#include <stdio.h> 
+int main () 
+{ 
+ int n, i=1; 
+ printf("Digite um numero:\n"); 
+ scanf("%d\n", &n); 
+ while(i < 100){ 
+ i++; 
+ if(i % 4 != 0){ 
+ continue; 
+ }else{ 
+ printf("%d\n", i); 
+  
+return 0; 
+ } 
+ } 
+}
